@@ -3,7 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem 'activeresource', '>= 3.2.0'
+gem 'activeresource', '~> 3.1.1'
 gem 'configatron', '>= 2.6.4'
 
 # Add dependencies to develop your gem here.

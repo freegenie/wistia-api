@@ -59,7 +59,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<activeresource>, [">= 3.2.0"])
+      s.add_runtime_dependency(%q<activeresource>, [">= 3.1.1"])
       s.add_runtime_dependency(%q<configatron>, [">= 2.6.4"])
     else
       s.add_dependency(%q<activeresource>, ["~> 3.1.1"])
@@ -68,7 +68,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<activeresource>, [">= 3.2.0"])
+      s.add_dependency(%q<activeresource>, [">= 3.1.1"])
       s.add_dependency(%q<configatron>, [">= 2.6.4"])
     end
   else
@@ -78,7 +78,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.1.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
     s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<activeresource>, [">= 3.2.0"])
+    s.add_dependency(%q<activeresource>, [">= 3.1.1"])
     s.add_dependency(%q<configatron>, [">= 2.6.4"])
   end
 end

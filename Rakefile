@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{A ruby library for working with Wistia's data API.}
   gem.email = "kri@exelab.eu"
   gem.authors = ["Jim Bancroft", "Mark Bates", "Christian Wörner"]
-  gem.add_runtime_dependency 'activeresource', '>= 3.2.0'
+  gem.add_runtime_dependency 'activeresource', '>= 3.1.1'
   gem.add_runtime_dependency 'configatron', '>= 2.6.4'
 end
 Jeweler::RubygemsDotOrgTasks.new

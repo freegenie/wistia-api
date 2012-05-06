@@ -3,6 +3,7 @@ require 'active_resource'
 require 'wistia/base'
 require 'wistia/media'
 require 'wistia/project'
+require 'wistia/embed'
 require 'wistia/projects/sharing'
 
 module Wistia

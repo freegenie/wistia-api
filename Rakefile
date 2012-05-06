@@ -1,3 +1,4 @@
+#encoding: utf-8
 require 'rubygems'
 require 'bundler'
 begin
@@ -11,19 +12,14 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "wistia-api"
-  gem.homepage = "http://github.com/wistia/wistia-api"
+  gem.homepage = "http://github.com/kr1/wistia-api"
   gem.license = "MIT"
   gem.summary = %Q{Ruby wrapper for Wistia's API}
   gem.description = %Q{A ruby library for working with Wistia's data API.}
-  gem.email = "support@wistia.com"
-  gem.authors = ["Jim Bancroft", "Mark Bates"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
-  gem.add_runtime_dependency 'activeresource', '>= 2.3.8'
+  gem.email = "kri@exelab.eu"
+  gem.authors = ["Jim Bancroft", "Mark Bates", "Christian Wörner"]
+  gem.add_runtime_dependency 'activeresource', '>= 3.2.0'
   gem.add_runtime_dependency 'configatron', '>= 2.6.4'
 end
 Jeweler::RubygemsDotOrgTasks.new

@@ -1,6 +1,6 @@
 module Wistia
   class Media < Wistia::Base
-    
+
     self.collection_name = 'medias'
 
     def still(width = 640, options = {})

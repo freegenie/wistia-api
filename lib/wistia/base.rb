@@ -11,11 +11,11 @@ module Wistia
     end
 
     refresh_config!
-    
+
     def to_json(options = {})
       return self.attributes.to_json(options)
     end
-    
+
   end
 end
 

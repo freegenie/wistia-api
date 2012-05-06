@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{wistia-api}
-  s.version = "0.1.6"
+  s.name = "wistia-api"
+  s.version = "0.1.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Jim Bancroft", "Mark Bates"]
-  s.date = %q{2011-06-21}
-  s.description = %q{A ruby library for working with Wistia's data API.}
-  s.email = %q{support@wistia.com}
+  s.authors = ["Jim Bancroft", "Mark Bates", "Christian W\u{f6}rner"]
+  s.date = "2012-05-06"
+  s.description = "A ruby library for working with Wistia's data API."
+  s.email = "kri@exelab.eu"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     "lib/wistia.rb",
     "lib/wistia/base.rb",
     "lib/wistia/config.rb",
+    "lib/wistia/embed.rb",
     "lib/wistia/media.rb",
     "lib/wistia/project.rb",
     "lib/wistia/projects/sharing.rb",
@@ -37,54 +38,47 @@ Gem::Specification.new do |s|
     "spec/support/config.test.yml",
     "spec/support/local_config.rb",
     "spec/wistia/base_spec.rb",
+    "spec/wistia/embed_spec.rb",
     "spec/wistia/projects/sharing_spec.rb",
     "spec/wistia_spec.rb",
     "wistia-api.gemspec"
   ]
-  s.homepage = %q{http://github.com/wistia/wistia-api}
+  s.homepage = "http://github.com/kr1/wistia-api"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Ruby wrapper for Wistia's API}
-  s.test_files = [
-    "spec/spec_helper.rb",
-    "spec/support/local_config.rb",
-    "spec/wistia/base_spec.rb",
-    "spec/wistia/projects/sharing_spec.rb",
-    "spec/wistia_spec.rb"
-  ]
+  s.rubygems_version = "1.8.10"
+  s.summary = "Ruby wrapper for Wistia's API"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activeresource>, [">= 2.3.8"])
+      s.add_runtime_dependency(%q<activeresource>, [">= 3.2.0"])
       s.add_runtime_dependency(%q<configatron>, [">= 2.6.4"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<activeresource>, [">= 2.3.8"])
+      s.add_runtime_dependency(%q<activeresource>, [">= 3.2.0"])
       s.add_runtime_dependency(%q<configatron>, [">= 2.6.4"])
     else
-      s.add_dependency(%q<activeresource>, [">= 2.3.8"])
+      s.add_dependency(%q<activeresource>, [">= 3.2.0"])
       s.add_dependency(%q<configatron>, [">= 2.6.4"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_dependency(%q<bundler>, ["~> 1.1.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<activeresource>, [">= 2.3.8"])
+      s.add_dependency(%q<activeresource>, [">= 3.2.0"])
       s.add_dependency(%q<configatron>, [">= 2.6.4"])
     end
   else
-    s.add_dependency(%q<activeresource>, [">= 2.3.8"])
+    s.add_dependency(%q<activeresource>, [">= 3.2.0"])
     s.add_dependency(%q<configatron>, [">= 2.6.4"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+    s.add_dependency(%q<bundler>, ["~> 1.1.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
     s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<activeresource>, [">= 2.3.8"])
+    s.add_dependency(%q<activeresource>, [">= 3.2.0"])
     s.add_dependency(%q<configatron>, [">= 2.6.4"])
   end
 end

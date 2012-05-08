@@ -10,7 +10,7 @@ module Wistia
       if Wistia::Base.password.empty?
         Wistia::Base.password  = Wistia.config.api.key
       end
-      raise RuntimeError("no password") unless Wistia::Base.password
+      raise RuntimeError, "no password" unless Wistia::Base.password
 
       query = assemble_query(options)
       url = "#{Wistia::Base.site.to_s}medias/#{id}/embed?#{query}"
